@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getContext, setContext, onMount } from "svelte";
+  import { getContext, setContext } from "svelte";
   import MapLibreGL, { type MarkerOptions } from "maplibre-gl";
 
   type Anchor =
