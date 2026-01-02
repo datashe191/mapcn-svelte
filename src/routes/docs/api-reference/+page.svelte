@@ -39,6 +39,10 @@
 		`ipt>`;
 </script>
 
+<svelte:head>
+	<title>API Reference - mapcn</title>
+</svelte:head>
+
 <DocsLayout
 	title="API Reference"
 	description="Complete reference for all map components and their props."

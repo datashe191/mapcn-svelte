@@ -14,6 +14,10 @@
 	const popupHighlighted = $derived(page.data.popupHighlighted);
 </script>
 
+<svelte:head>
+	<title>Markers - mapcn</title>
+</svelte:head>
+
 <DocsLayout
 	title="Markers"
 	description="Add interactive markers to your map with popups and tooltips."

@@ -10,6 +10,10 @@
 	const popupHighlighted = $derived(page.data.popupHighlighted);
 </script>
 
+<svelte:head>
+	<title>Popups - mapcn</title>
+</svelte:head>
+
 <DocsLayout
 	title="Standalone Popups"
 	description="Display popups anywhere on the map without markers."

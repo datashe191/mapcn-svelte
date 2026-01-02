@@ -10,6 +10,10 @@
 	const controlsHighlighted = $derived(page.data.controlsHighlighted);
 </script>
 
+<svelte:head>
+	<title>Map Controls - mapcn</title>
+</svelte:head>
+
 <DocsLayout
 	title="Map Controls"
 	description="Add interactive controls to your map for zoom, compass, location, and fullscreen."

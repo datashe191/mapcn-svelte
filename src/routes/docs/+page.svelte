@@ -2,8 +2,7 @@
 	import { page } from "$app/state";
 	import DocsLayout from "$lib/components/docs/DocsLayout.svelte";
 	import DocsSection from "$lib/components/docs/DocsSection.svelte";
-	import DocsCode from "$lib/components/docs/DocsCode.svelte";
-
+	import DocsLink from "$lib/components/docs/DocsLink.svelte";
 	import { ComponentPreview } from "$lib/components/docs/preview";
 	import RouteExample from "$lib/components/docs/preview/examples/RouteExample.svelte";
 	import OsrmRouteExample from "$lib/components/docs/preview/examples/OsrmRouteExample.svelte";
@@ -15,18 +14,35 @@
 	const osrmRouteHighlighted = $derived(page.data.osrmRouteHighlighted);
 </script>
 
+<svelte:head>
+	<title>Getting Started - mapcn</title>
+</svelte:head>
+
 <DocsLayout
-	title="Routes"
-	description="Draw lines and paths connecting coordinates on the map."
-	prev={{ title: "Popups", href: "/docs/popups" }}
+	title="Getting Started"
+	description="Beautiful, customizable map components for Svelte applications."
+	next={{ title: "Installation", href: "/docs/installation" }}
 >
 	<DocsSection>
 		<p>
-			Use
-			<DocsCode>MapRoute</DocsCode>
-			to draw lines connecting a series of coordinates. Perfect for showing directions, trails, or any
-			path between points.
+			mapcn is a collection of map components built on top of
+			<DocsLink href="https://maplibre.org" external>MapLibre GL JS</DocsLink>
+			and styled with
+			<DocsLink href="https://tailwindcss.com" external>Tailwind CSS</DocsLink>. It integrates
+			seamlessly with
+			<DocsLink href="https://www.shadcn-svelte.com" external>shadcn-svelte</DocsLink>.
 		</p>
+	</DocsSection>
+
+	<DocsSection title="Features">
+		<ul class="list-inside list-disc space-y-2">
+			<li>Interactive maps with zoom, pan, and rotation</li>
+			<li>Customizable markers with labels, popups, and tooltips</li>
+			<li>Route drawing for paths and directions</li>
+			<li>Automatic light/dark theme switching</li>
+			<li>Built-in controls for zoom, compass, and geolocation</li>
+			<li>No API key required - uses free CARTO basemap tiles</li>
+		</ul>
 	</DocsSection>
 
 	<DocsSection title="Basic Route">
@@ -44,4 +60,11 @@
 	<ComponentPreview code={osrmRouteSource} highlightedCode={osrmRouteHighlighted}>
 		<OsrmRouteExample />
 	</ComponentPreview>
+
+	<DocsSection title="Quick Start">
+		<p>
+			Head to the <DocsLink href="/docs/installation">Installation</DocsLink> guide to add mapcn to
+			your project, then explore the examples to see what's possible.
+		</p>
+	</DocsSection>
 </DocsLayout>

@@ -10,6 +10,10 @@
 	const basicMapHighlighted = $derived(page.data.basicMapHighlighted);
 </script>
 
+<svelte:head>
+	<title>Basic Map - mapcn</title>
+</svelte:head>
+
 <DocsLayout
 	title="Basic Map"
 	description="The simplest way to add an interactive map to your application."

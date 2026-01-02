@@ -27,10 +27,14 @@
 </Card>;`;
 </script>
 
+<svelte:head>
+	<title>Installation - mapcn</title>
+</svelte:head>
+
 <DocsLayout
 	title="Installation"
 	description="How to install and set up mapcn in your project."
-	prev={{ title: "Introduction", href: "/docs" }}
+	prev={{ title: "Getting Started", href: "/docs" }}
 	next={{ title: "API Reference", href: "/docs/api-reference" }}
 >
 	<DocsSection title="Prerequisites">

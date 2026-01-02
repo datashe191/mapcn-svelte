@@ -13,6 +13,10 @@
 	const osrmRouteHighlighted = $derived(page.data.osrmRouteHighlighted);
 </script>
 
+<svelte:head>
+	<title>Routes - mapcn</title>
+</svelte:head>
+
 <DocsLayout
 	title="Routes"
 	description="Draw lines and paths connecting coordinates on the map."
