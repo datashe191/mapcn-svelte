@@ -1,21 +1,20 @@
-import fs from "fs";
-import path from "path";
 import { highlightCode } from "$lib/highlight";
 
-const EXAMPLES_DIR = path.resolve("src/lib/components/docs/preview/examples");
-
-function getExampleSource(filename: string): string {
-	const filePath = path.join(EXAMPLES_DIR, filename);
-
-	if (!fs.existsSync(filePath)) {
-		throw new Error(`Example file not found: ${filename}`);
-	}
-
-	return fs.readFileSync(filePath, "utf-8");
-}
+/**
+ * Bundle all example components as raw strings at build time.
+ */
+const examples = import.meta.glob("$lib/components/docs/preview/examples/*.svelte", { as: "raw" });
 
 export const load = async () => {
-	const source = getExampleSource("MapControlsExample.svelte");
+	const key = "/src/lib/components/docs/preview/examples/MapControlsExample.svelte";
+
+	const loader = examples[key];
+
+	if (!loader) {
+		throw new Error(`Example file not found: ${key}`);
+	}
+
+	const source = await loader();
 
 	return {
 		controlsSource: source,

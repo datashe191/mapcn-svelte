@@ -1,21 +1,23 @@
-import fs from "fs";
-import path from "path";
 import { highlightCode } from "$lib/highlight";
 
-const EXAMPLES_DIR = path.resolve("src/lib/components/docs/preview/examples");
+/**
+ * Bundle all example components as raw strings at build time.
+ */
+const examples = import.meta.glob("$lib/components/docs/preview/examples/*.svelte", { as: "raw" });
 
-function getExampleSource(filename: string): string {
-	const filePath = path.join(EXAMPLES_DIR, filename);
+async function getExampleSource(name: string): Promise<string> {
+	const key = `/src/lib/components/docs/preview/examples/${name}.svelte`;
+	const loader = examples[key];
 
-	if (!fs.existsSync(filePath)) {
-		throw new Error(`Example file not found: ${filename}`);
+	if (!loader) {
+		throw new Error(`Example file not found: ${name}`);
 	}
 
-	return fs.readFileSync(filePath, "utf-8");
+	return loader();
 }
 
 export const load = async () => {
-	const source = getExampleSource("StandalonePopupExample.svelte");
+	const source = await getExampleSource("StandalonePopupExample");
 
 	return {
 		popupSource: source,
