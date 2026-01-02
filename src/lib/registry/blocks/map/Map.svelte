@@ -4,7 +4,7 @@
   import "maplibre-gl/dist/maplibre-gl.css";
 	import { browser } from "$app/environment";
 
-	let tailwindTheme: "light" | "dark" = "light";
+	let tailwindTheme: "light" | "dark" = $state("light");
 
   type MapStyleOption = string | MapLibreGL.StyleSpecification;
 
