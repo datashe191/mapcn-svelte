@@ -13,8 +13,9 @@ export async function highlightCode(code: string, lang: string = "svelte"): Prom
 	return highlighter.codeToHtml(code, {
 		lang,
 		themes: {
-			dark: "github-dark",
 			light: "github-light",
+			dark: "github-dark",
 		},
+		defaultColor: false,
 	});
 }
