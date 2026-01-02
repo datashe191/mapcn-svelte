@@ -2,6 +2,9 @@
   import { onMount, onDestroy, setContext, untrack } from "svelte";
   import MapLibreGL from "maplibre-gl";
   import "maplibre-gl/dist/maplibre-gl.css";
+	import { browser } from "$app/environment";
+
+	let tailwindTheme: "light" | "dark" = "light";
 
   type MapStyleOption = string | MapLibreGL.StyleSpecification;
 
@@ -43,8 +46,13 @@
     light: styles?.light ?? defaultStyles.light,
   });
 
-  const currentStyle = $derived(theme === "dark" ? mapStyles.dark : mapStyles.light);
-  const isReady = $derived(isMounted && isLoaded && isStyleLoaded);
+	const currentStyle = $derived(
+		tailwindTheme === "dark"
+			? mapStyles.dark
+			: mapStyles.light
+	);
+
+	const isReady = $derived(isMounted && isLoaded && isStyleLoaded);
 
   setContext("map", {
     getMap: () => map,
@@ -53,6 +61,26 @@
 
   onMount(() => {
     isMounted = true;
+
+		if (browser) {
+			const root = document.documentElement;
+
+			const updateTheme = () => {
+				tailwindTheme = root.classList.contains("dark")
+					? "dark"
+					: "light";
+			};
+
+			updateTheme();
+
+			const observer = new MutationObserver(updateTheme);
+			observer.observe(root, {
+				attributes: true,
+				attributeFilter: ["class"],
+			});
+
+			onDestroy(() => observer.disconnect());
+		}
 
     const mapInstance = new MapLibreGL.Map({
       container: mapContainer,
