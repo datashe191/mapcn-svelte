@@ -21,7 +21,8 @@
   <MapRoute coordinates={...} />
 </Map>`;
 
-	const useMapCode = `<script lang="ts">
+	const useMapCode =
+		`<scr` + `ipt lang="ts">
   import { getContext } from "svelte";
   import type MapLibreGL from "maplibre-gl";
 
@@ -33,7 +34,7 @@
   // Access the map instance
   const map = mapCtx.getMap();
   const isLoaded = mapCtx.isLoaded();
-</script>`;
+</scr` + `ipt>`;
 </script>
 
 <DocsLayout

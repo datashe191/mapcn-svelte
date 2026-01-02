@@ -15,16 +15,16 @@
 
 	const installCode = `npx shadcn-svelte@latest add ${siteUrl}/r/map.json`;
 
-	const usageCode = `<script lang="ts">
+	const usageCode = `<scr` + `ipt lang="ts">
   import { Map, MapControls } from "$lib/components/ui/map";
   import { Card } from "$lib/components/ui/card";
-</script>
+</scr` + `ipt>;
 
 <Card class="h-[300px] overflow-hidden p-0">
   <Map center={[-74.006, 40.7128]} zoom={11}>
     <MapControls />
   </Map>
-</Card>`;
+</Card>;`;
 </script>
 
 <DocsLayout
