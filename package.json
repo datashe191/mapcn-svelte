@@ -15,6 +15,7 @@
 		"build:registry": "pnpm shadcn-svelte registry build"
 	},
 	"dependencies": {
+		"@vercel/analytics": "^1.6.1",
 		"lucide-svelte": "^0.562.0",
 		"maplibre-gl": "^5.15.0",
 		"shiki": "^3.6.0"
