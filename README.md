@@ -8,9 +8,9 @@
   </p>
 
   <p>
-    <a href="https://your-domain.vercel.app">Get Started</a> •
-    <a href="https://your-domain.vercel.app/docs/installation">Installation</a> •
-    <a href="https://your-domain.vercel.app/docs/basic-map">Examples</a>
+    <a href="https://mapcn-svelte.vercel.app">Get Started</a> •
+    <a href="https://mapcn-svelte.vercel.app/docs/installation">Installation</a> •
+    <a href="https://mapcn-svelte.vercel.app/docs/basic-map">Examples</a>
   </p>
 </div>
 
